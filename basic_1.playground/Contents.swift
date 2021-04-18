@@ -32,6 +32,14 @@ var myPoint = 3.5
 // 따라서 Float 타입을 사용하려면 반드시 지정해야 함
 var yourPoint: Float = 4.0
 
+/**
+ UInt - Unsigned Interger를 의미하며 음수를 입력할 수 없는 타입
+ UInt8, UInt16, UInt32 등 비트가 따라 붙기도 하는데
+ 표현하고 싶은 숫자의 길이를 제한하고 싶을 때 사용한다(ex: UInt8의 max는 255)
+ 지정한 비트의 범위를 넘어가면 overflow가 일어남
+ */
+var myNumber: UInt
+
 // optional
 var myString: String?
 myString = "hello"
