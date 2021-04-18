@@ -40,6 +40,24 @@ var yourPoint: Float = 4.0
  */
 var myNumber: UInt
 
+// Type Alias - 임의의 타입 키워드를 생성하는 방법
+// 타입스크립트의 interface와 유사함
+typealias myType = UInt8
+var myInt: myType = 255 // 단순히 특정 타입만 새로운 이름으로 지정할 수도 있고
+
+typealias GridPoint = (x: Int, y: Int)
+var touchPoint: GridPoint = GridPoint(10, 20)
+print(touchPoint.x) // 10
+
+typealias UserProfile = (name: String, age: Int)
+var myProfile: UserProfile = UserProfile(name: "Sooyoung", age: 34)
+print(myProfile) // (name: "Sooyoung", age: 34)
+print(myProfile.name) // Sooyoung
+
+
+
+
+
 // optional
 var myString: String?
 myString = "hello"
