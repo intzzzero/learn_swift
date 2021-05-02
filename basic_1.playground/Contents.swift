@@ -115,7 +115,19 @@ for val in myArr[1...4] { // 원하는 위치의 값 출력
     print(val)
 }
 
+//  key: value 형태의 dictionary 접근
+let myInfo = ["name": "sooyoung", "age": "34", "gender": "male"]
+for (key, value) in myInfo {
+    print("My \(key) is \(value)")
+}
+
 // optional
-var myString: String?
-myString = "hello"
+var myString: String? // optional에 값을 할당하지 않으면 nil 출력(JS의 null과 동일한 개념)
+
+// optional이 아닌데 값을 할당하지 않을 때에는 init()을 해줘야 함
+// 해당 타입의 초기값이(string이면 ""빈문자열, int면 0) 할당된다는 점에서 optional과는 엄연히 다름
+var myString2: String = String.init()
+
+// init() 생략 가능
+var myScore: Int = Int()
 
